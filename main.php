@@ -1,22 +1,22 @@
-<?php
-
-require_once 'human.php';
-
 class Main {
-    
-//コンストラクタが正しく実行され、名前・年齢・趣味の各変数を引数の情報で初期化
     static function start() {
         // コンストラクタ
-         __construct();
-    
         // インスタンスの生成と、変数への代入
-        $tanaka = new Human("tanaka", 25, "kiing");
-        $suzuki = new Human();
-        $sato = new Human();
+        $tanaka = new Human("田中 太郎", 25, "電車");
+        $suzuki = new Human("鈴木 次郎", 30, "野球");
+        $sato = new Human("佐藤 花子", 20, "映画");
+    
+// 関数を実行
+//呼び出しはOK
+$tanaka->say();
+$tanaka->think();
+$suzuki->say();
+$suzuki->think();
+$sato->say();
+$sato->think();
 
-        // 関数を実行
-        
     }
 }
+
 
 Main::start();
