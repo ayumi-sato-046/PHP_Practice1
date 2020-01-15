@@ -1,3 +1,6 @@
+<?php
+require_once 'human.php';
+
 class Main {
     static function start() {
         // コンストラクタ
@@ -20,3 +23,4 @@ $sato->think();
 
 
 Main::start();
+?>
